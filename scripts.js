@@ -95,7 +95,7 @@ getData().then((data) => {
     var start = Date.now()
     var curlink = window.location.href;
     var core = "https://www.supremenewyork.com/shop/"
-    var timeDelay = 4000;
+    var timeDelay = 0;
 
 
     function sleeper(millis) {
@@ -134,9 +134,7 @@ getData().then((data) => {
 
     if (curlink.includes("checkout")) {
         document.querySelector("#cart-cc > fieldset > p > label > div").click();
-        sleeper(timeDelay / 2);
         document.getElementById("order_billing_name").value = user.name;
-        sleeper(timeDelay / 2);
         document.getElementById("order_email").value = user.email;
 
         document.getElementById("order_tel").value = user.tel;
@@ -146,7 +144,6 @@ getData().then((data) => {
         document.getElementById("order_billing_zip").value = user.zip;
 
         document.getElementById("order_billing_city").value = user.city;
-        sleeper(timeDelay / 2);
         var selected = document.getElementById('order_billing_state').getElementsByTagName('option');
         sleeper(timeDelay / 2);
         for (var pos in selected) {
