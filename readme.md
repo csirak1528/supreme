@@ -5,18 +5,31 @@ Download this package and open the Scripts.js file
 
 Second Step:
 Enter your information on line 80
+
  var user = {
+ 
         name: "Jeff Barnum",
+        
         email: "jeffbarnum96@yahoo.com",
+        
         tel: 2022534845,
+        
         address: "1234 Who street",
+        
         zip: "28104",
+        
         city: "New York",
+        
         state: "NY",
+        
         ccnum: "4767718398576118",
+        
         month: "03",
+        
         year: "2027",
+        
         cvv: "847",
+        
     }
 
 Enter your keywords into the keywords array on line 31 
