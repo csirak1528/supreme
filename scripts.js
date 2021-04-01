@@ -29,24 +29,24 @@ const getData = async () => {
 getData().then((data) => {
     var choices = []
     var keywords = []
-    var categories = []
+    var categories = ""
     var pC = data.products_and_categories
     //changed to search through categories rather than all of api
-    for (var pos in categories) {
-        var products = pC[categories[pos]]
-        for (var posProd in products) {
-            var product = products[posProd]
-            for (var namePos in keywords) {
-                if (product.name.toLowerCase().includes(keywords[namePos])) {
-                    choices.push(
-                        {
-                            name: product.name,
-                            category_name: product.category_name
-                        }
-                    )
-                }
+    
+    var products = pC[categories]
+    for (var posProd in products) {
+        var product = products[posProd]
+        for (var namePos in keywords) {
+            if (product.name.toLowerCase().includes(keywords[namePos])) {
+                choices.push(
+                    {
+                        name: product.name,
+                        category_name: product.category_name
+                    }
+                )
             }
         }
+        
     }
 
 
