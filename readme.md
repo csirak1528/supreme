@@ -1,7 +1,9 @@
 How to run this bot
 
 First step: 
-Download this package and open the Scripts.js file
+Download this package Extract its contents leaving you a supreme folder with 5 files
+Make sure to move the folder holding the files outside the extracted folder
+and open the Scripts.js file with an editor by right clicking and selecting open with .. an editor of your choice
 
 Second Step:
 Enter your information on line 80
@@ -61,9 +63,12 @@ Go to
 chrome://extensions/
 
 and activate Developer mode by hitting the switch in the upper right hand corner
-Then click Select Unpacked and upload this folder to Chrome
+Then click Select Unpacked and upload the folder holding the 5 files to Chrome
 
 Before running make sure that the blue switch is on in the bottom corner of the extension description
 
 EXTRA WARNINGS
 Be sure to close off any developer tabs or inspect elements open as it will cause a pause in the debugger
+
+Activate the bot by going to this specific link
+https://www.supremenewyork.com/shop/
