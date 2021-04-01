@@ -28,8 +28,8 @@ const getData = async () => {
 
 getData().then((data) => {
     var choices = []
-    var keywords = ["nuptse"]
-    var categories = "Pants"
+    var keywords = ["cutter"]
+    var categories = "Accessories"
     var pC = data.products_and_categories
     //changed to search through categories rather than all of api
 
@@ -104,7 +104,8 @@ getData().then((data) => {
         do { curDate = new Date(); }
         while (curDate - date < millis);
     }
-    if (!choices) {
+    if (!choices.length) {
+        console.log("redirect")
         chrome.runtime.sendMessage({ redirect: "https://www.supremenewyork.com/shop/" })
     }
 
@@ -137,13 +138,13 @@ getData().then((data) => {
         document.getElementById("order_billing_name").value = user.name;
         sleeper(timeDelay / 2);
         document.getElementById("order_email").value = user.email;
-        sleeper(timeDelay / 2);
+
         document.getElementById("order_tel").value = user.tel;
-        sleeper(timeDelay / 2);
+
         document.getElementById("bo").value = user.address;
-        sleeper(timeDelay / 2);
+
         document.getElementById("order_billing_zip").value = user.zip;
-        sleeper(timeDelay / 2);
+
         document.getElementById("order_billing_city").value = user.city;
         sleeper(timeDelay / 2);
         var selected = document.getElementById('order_billing_state').getElementsByTagName('option');
