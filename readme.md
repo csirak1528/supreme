@@ -51,6 +51,8 @@ These should be the Same Categories supreme uses
         T-Shirts 
         Sweatshirts 
         Shorts 
+        
+Make sure to save your changes and exit your editor
 
 The Next Steps Handle Uploading the files to Browser:
 This is a Chrome Extension so use Google Chrome
