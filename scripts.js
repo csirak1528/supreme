@@ -28,11 +28,11 @@ const getData = async () => {
 
 getData().then((data) => {
     var choices = []
-    var keywords = []
-    var categories = ""
+    var keywords = ["nuptse"]
+    var categories = "Pants"
     var pC = data.products_and_categories
     //changed to search through categories rather than all of api
-    
+
     var products = pC[categories]
     for (var posProd in products) {
         var product = products[posProd]
@@ -46,7 +46,7 @@ getData().then((data) => {
                 )
             }
         }
-        
+
     }
 
 
@@ -125,7 +125,7 @@ getData().then((data) => {
         setItem(choices[0].name)
 
     }
-    if (!(curlink.includes("all")) && curlink.includes('shop')) {
+    if (!(curlink.includes("all")) && curlink.includes('shop') && curlink != core) {
         document.querySelector("#add-remove-buttons > input").click()
         sleeper(1000)
         document.querySelector("#cart > a.button.checkout").click()
@@ -178,7 +178,7 @@ getData().then((data) => {
         document.querySelector("#pay > input").click()
 
     }
-
+    console.log(choices)
     var end = Date.now()
 
     console.log(end - start)
