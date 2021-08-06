@@ -1,13 +1,13 @@
-How to run this bot
+# Supreme Bot
+- Searches through Supremes catalog and makes purchases on newly downloaded items
 
-First step: 
-Download this package Extract its contents leaving you a supreme folder with 5 files
+## How to run this bot
+1. Download this package Extract its contents leaving you a supreme folder with 5 files
 Make sure to move the folder holding the files outside the extracted folder
 and open the Scripts.js file with an editor by right clicking and selecting open with .. an editor of your choice
 
-Second Step:
-Enter your information on line 80
-
+2. Enter your information on line 80
+```
  var user = {
  
         name: "Jeff Barnum",
@@ -33,14 +33,16 @@ Enter your information on line 80
         cvv: "847",
         
     }
+```
 
-Enter your keywords into the keywords array on line 31 
+4. Enter your keywords into the keywords array on line 31 
 var keywords = ["pants","shoes","Hanes"] 
 These should be concise and lowercase
 
-Enter the categories you would like searched into the categories array on line 32 
+5. Enter the categories you would like searched into the categories array on line 32 
 var categories = ["Accessories","Pants"] 
 These should be the Same Categories supreme uses 
+```
         Accessories
         Pants
         Bags
@@ -53,10 +55,12 @@ These should be the Same Categories supreme uses
         T-Shirts 
         Sweatshirts 
         Shorts 
-        
-Make sure to save your changes and exit your editor
+```
 
-The Next Steps Handle Uploading the files to Browser:
+5. Make sure to save your changes and exit your editor
+
+6. The Next Steps Handle Uploading the files to Browser:
+```
 This is a Chrome Extension so use Google Chrome
 
 Go to 
@@ -72,3 +76,4 @@ Be sure to close off any developer tabs or inspect elements open as it will caus
 
 Activate the bot by going to this specific link
 https://www.supremenewyork.com/shop/
+```
